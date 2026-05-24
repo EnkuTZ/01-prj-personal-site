@@ -2,10 +2,97 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <header class="site-header">
+    <div class="brand">
+      <span class="logo">⭐</span>
+      <div>
+        <h1>My Portfolio</h1>
+        <p>Web development student showcase</p>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="#bio">Bio</a>
+      <a href="#skills">Skills</a>
+      <a href="#interest">Interests</a>
+      <a href="#education">Education</a>
+    </nav>
+  </header>
+
+  <main class="page-content">
+    <section id="bio" class="section card">
+      <div class="section-header">
+        <h2>About Me</h2>
+        <span class="section-icon">📌</span>
+      </div>
+      <p>Hello! I am a beginner web developer learning HTML, CSS, and design. I love creating clean pages that are easy for people to read and enjoy.</p>
+      <p>This site will show my bio, my skills, the things I love, and my educational background as I build my portfolio for college.</p>
+      <div class="hero-images">
+        <span class="hero-image">⭐</span>
+        <span class="hero-image">📚</span>
+      </div>
+    </section>
+
+    <section id="skills" class="section card">
+      <div class="section-header">
+        <h2>Skills</h2>
+        <span class="section-icon">💡</span>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">💻</div>
+          <p>HTML</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🎨</div>
+          <p>CSS</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">⚙️</div>
+          <p>Responsive Design</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🧠</div>
+          <p>Problem Solving</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="interest" class="section card">
+      <div class="section-header">
+        <h2>Interests</h2>
+        <span class="section-icon">🌟</span>
+      </div>
+      <ul class="interest-list">
+        <li>Learning new web technologies</li>
+        <li>Building simple, clean website layouts</li>
+        <li>Reading books about coding and design</li>
+        <li>Practicing project-based learning</li>
+      </ul>
+    </section>
+
+    <section id="education" class="section card">
+      <div class="section-header">
+        <h2>Educational Background</h2>
+        <span class="section-icon">🎓</span>
+      </div>
+      <div class="education-item">
+        <h3>Web Development Course</h3>
+        <p>College course focusing on HTML, CSS, and beginner web design.</p>
+      </div>
+      <div class="education-item">
+        <h3>School Projects</h3>
+        <p>Creating website pages and practicing coding with guided class assignments.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Ready to learn and grow with every project.</p>
+  </footer>
 </body>
 </html>

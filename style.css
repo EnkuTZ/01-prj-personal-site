@@ -1,1 +1,151 @@
-/* Add you CSS here */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(180deg, #f8d34b 0%, #d3c8c0 100%);
+  color: #333;
+}
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 20px 24px;
+  background: rgba(255, 255, 255, 0.85);
+  border-bottom: 2px solid #d8c4a4;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.page-content {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.section {
+  margin-bottom: 24px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #d9d3c8;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.section-header h2 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.section-icon {
+  font-size: 1.7rem;
+}
+
+.hero-images {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.hero-image {
+  font-size: 2.4rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.skill-card {
+  background: #fff9e6;
+  border: 1px solid #e1d7b6;
+  border-radius: 14px;
+  padding: 18px;
+  text-align: center;
+}
+
+.skill-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.interest-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.interest-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #e6ddcf;
+}
+
+.interest-list li:last-child {
+  border-bottom: none;
+}
+
+.education-item {
+  margin-bottom: 18px;
+}
+
+.education-item h3 {
+  margin: 0 0 8px;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 18px 24px 32px;
+  color: #4d423b;
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main-nav {
+    width: 100%;
+  }
+}
